@@ -1,0 +1,12 @@
+{
+  "name": "api-emprestimos-biblioteca",
+  "version": "1.0.0",
+  "description": "API de empréstimos da biblioteca com persistência em arquivo JSON",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

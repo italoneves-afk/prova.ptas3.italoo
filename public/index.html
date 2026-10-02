@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empréstimos | Biblioteca do IFMS Campus N.A.</title>
+    <link rel="stylesheet" href="/main.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="/">Biblioteca do IFMS Campus N.A.</a>
+        <span>Controle de empréstimos</span>
+      </div>
+    </div>
+
+    <div class="container main-content">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">BIBLIOTECA</p>
+          <h1>Empréstimos</h1>
+          <p>Acompanhe os livros que estão com os alunos.</p>
+        </div>
+        <a class="button-link" href="#novo-emprestimo">Novo empréstimo</a>
+      </div>
+
+      <div class="summary">
+        <span id="active-count">0</span>
+        <span>empréstimos ativos</span>
+      </div>
+
+      <div class="columns">
+        <div class="panel">
+          <div class="section-heading">
+            <h2>Em andamento</h2>
+            <label>
+              <span class="sr-only">Buscar livro ou aluno</span>
+              <input id="search-input" type="text" placeholder="Buscar livro ou aluno">
+            </label>
+          </div>
+          <p class="message" id="page-feedback" hidden></p>
+          <div id="loan-list">
+            <p class="empty-state">Carregando empréstimos...</p>
+          </div>
+        </div>
+
+        <div class="panel" id="novo-emprestimo">
+          <h2>Novo empréstimo</h2>
+          <form id="new-loan-form">
+            <label for="student-name">Nome do aluno</label>
+            <input id="student-name" name="nomeAluno" type="text" maxlength="100" required>
+            <label for="book-name">Livro</label>
+            <input id="book-name" name="livro" type="text" maxlength="150" required>
+            <p class="message" id="form-feedback" hidden></p>
+            <button class="button primary" type="submit">Registrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="edit-modal" id="edit-dialog" hidden>
+      <div class="edit-box">
+        <form id="edit-form">
+          <h2>Editar empréstimo</h2>
+          <label for="edit-student">Nome do aluno</label>
+          <input id="edit-student" name="nomeAluno" type="text" maxlength="100" required>
+          <label for="edit-book">Livro</label>
+          <input id="edit-book" name="livro" type="text" maxlength="150" required>
+          <p class="message" id="edit-feedback" hidden></p>
+          <div class="actions">
+            <button class="button secondary" id="cancel-edit" type="button">Cancelar</button>
+            <button class="button primary" type="submit">Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

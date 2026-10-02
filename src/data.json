@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nomeAluno": "Ana",
+    "livro": "Clean Code",
+    "devolvidoEm": "2026-10-02T18:07:28.734Z"
+  },
+  {
+    "id": 2,
+    "nomeAluno": "Bruno",
+    "livro": "O Programador Pragmático",
+    "devolvidoEm": null
+  },
+  {
+    "id": 3,
+    "nomeAluno": "Carla",
+    "livro": "Refatoração",
+    "devolvidoEm": "2026-08-20T14:30:00.000Z"
+  },
+  {
+    "id": 4,
+    "nomeAluno": "roberto",
+    "livro": "como lavar dinheiro",
+    "devolvidoEm": "2026-10-02T18:04:49.514Z"
+  },
+  {
+    "id": 5,
+    "nomeAluno": "José",
+    "livro": "Dom Casmurro",
+    "devolvidoEm": null
+  },
+  {
+    "id": 6,
+    "nomeAluno": "Maria",
+    "livro": "Capitães da Areia",
+    "devolvidoEm": null
+  },
+  {
+    "id": 7,
+    "nomeAluno": "João",
+    "livro": "A Hora da Estrela",
+    "devolvidoEm": null
+  }
+]
